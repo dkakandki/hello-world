@@ -8,7 +8,7 @@ pipeline {
 	        checkout changelog: false, poll: false,
 		scm: [$class: 'GitSCM',
 		branches: [[name: '*/master']],
-		extensions: [], userRemoteConfigs: [[credentialsId: 'fe325150-444b-46da-a418-01749036c55b',
+		extensions: [], userRemoteConfigs: [[credentialsId: 'git',
 		url: 'https://github.com/dkakandki/hello-world.git']]]	
             }
         }
